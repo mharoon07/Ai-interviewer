@@ -1,8 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
+import { Image } from "next/image";
 import { getUser } from "../../../services/userService";
 
-export default function Profile({ params }) {
+export default function Profile() {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -53,7 +54,7 @@ export default function Profile({ params }) {
         <div className="bg-[#111827] border border-gray-700 rounded-3xl shadow-xl p-10 md:p-12 space-y-10">
           {/* Profile Header */}
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-            <img
+            <Image
               src={user.imgurl || "/default-avatar.png"}
               alt={user.name}
               className="w-28 h-28 rounded-full object-cover border-4 border-blue-500 shadow-lg"

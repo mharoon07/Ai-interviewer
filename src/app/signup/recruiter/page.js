@@ -77,7 +77,7 @@ export default function Signup() {
         router.push(data.redirect);
       }
     } catch (err) {
-      setError("Server error. Please try again later.");
+      setError("Server error. Please try again later.",err);
     }
   };
 

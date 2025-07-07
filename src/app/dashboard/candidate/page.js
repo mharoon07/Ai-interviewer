@@ -4,7 +4,6 @@ import { getUser } from "../../../services/userService";
 import Sidebar from "../../../components/sidebar";
 import { RocketIcon, CalendarDaysIcon } from "lucide-react";
 import InterviewChart from "../../../components/InterviewChart";
-import MonthlyInterviewStats from "../../../components/MonthlyInterviewStats";
 import CategorySuccessChart from "../../../components/CategorySuccessChart";
 import RecruiterJobList from "../../../components/RecruiterJobList";
 import AppliedJobsList from "../../../components/AppliedJobsList";

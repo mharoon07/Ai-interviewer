@@ -75,8 +75,8 @@ const generateToken = (email) => {
       },
       JWT_SECRET
     );
-  } catch (error) {
-    throw new Error("Failed to generate token");
+  } catch (e) {
+    throw new Error("Failed to generate token" +e);
   }
 };
 

@@ -1,4 +1,4 @@
-import Image from "next/image";
+ 
 import Header from "@/components/header";
 import  Grid  from "@/components/grid";
 import Works from "@/components/works";

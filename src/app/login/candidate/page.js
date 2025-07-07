@@ -49,7 +49,7 @@ export default function Login() {
         location.reload();
       }
     } catch (err) {
-      setError("Server error. Please try again later.");
+      setError("Server error. Please try again later.",err);
     }
   };
 

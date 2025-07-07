@@ -36,7 +36,7 @@ export default function JobUploadForm() {
       };
       const res = await postJob(payload);
       console.log(JSON.stringify(res) + "Response");
-      const Data = JSON.stringify(res);
+   
 
       toast.success("Job posted successfully!");
       setSuccess("Job posted successfully!");
